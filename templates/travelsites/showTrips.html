@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <!-- Masthead-->
+        <header class="masthead">
+            <nav class="navbar navbar-expand-sm mb-3">
+                <div class="container-fluid">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between col" id="navbarResponsive">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index' %}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'showtrips' %}">Destinations</a></li>
+                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'customers' %}">Customers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br><br>
+            <div class="container">
+                <div class="masthead-subheading">Choose an area:</div>
+                <a class="btn btn-primary text-uppercase js-scroll-trigger m-1" href="{% url 'africa' %}">Africa</a>
+                <a class="btn btn-primary text-uppercase js-scroll-trigger m-1" href="{% url 'asia' %}">Asia</a>
+                <a class="btn btn-primary text-uppercase js-scroll-trigger m-1" href="{% url 'australia' %}">Australia</a>
+                <a class="btn btn-primary text-uppercase js-scroll-trigger m-1" href="{% url 'europe' %}">Europe</a>
+                <a class="btn btn-primary text-uppercase js-scroll-trigger m-1" href="{% url 'northamerica' %}">North America</a>
+                <a class="btn btn-primary text-uppercase js-scroll-trigger m-1" href="{% url 'southamerica' %}">South America</a>
+            </div>
+            <br><br><br><br><br>
+        </header>
+{% endblock %}

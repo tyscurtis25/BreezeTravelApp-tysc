@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <header>
+        <nav class="navbar navbar-expand-sm mb-3 mb-lg-5">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between col" id="navbarResponsive">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'showtrips' %}">Destinations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br>
+        <div class="container">
+            <h1 class="d-flex justify-content-center">Welcome to {{area}}</h1>
+            <div class="d-flex justify-content-center">
+
+                <img src="{{image.url}}" width="500"/>
+            <div>
+        </div>
+    </header>
+{% endblock %}
