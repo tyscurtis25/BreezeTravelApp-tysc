@@ -1,32 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<header class="masthead">
-    <nav class="navbar navbar-expand-sm mb-3">
-        <div class="container-fluid">
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between col" id="navbarResponsive">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index' %}">Home</a></li>
-                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'showtrips' %}">Destinations</a></li>
-                            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'customers' %}">Customers</a></li>
-                </ul>
-            </div>
+    <div class="pt-2 mt-5">
+        <h1><b>CUSTOMER LIST</b></h1>
+        <a class="btn btn-primary" href="{% url 'addCustomer' %}">New Customer</a>
         </div>
-    </nav>
-    <h1><b>CUSTOMER LIST</b></h1>
-    <a class="btn btn-primary" href="{% url 'addCustomer' %}">New Customer</a>
-    <br><br>
-
-    <div class="container">
-        {% for customer in cust %}
-        <p>
-            <a class="btn btn-primary" href="{% url 'showSingleCustomer' cust_id=customer.id %}">Edit</a>
-            <a class="btn btn-primary" href="{% url 'addCustomerDestination' cust_id=customer.id %}">Add Destination</a>
-            {{ customer.last_name }}, {{ customer.first_name }}
-            <a class="btn btn-primary" href="{% url 'deleteCustomer' cust_id=customer.id %}">Delete</a>
-        </p>
-        {% endfor %}
+        <div class="container">
+            {% for customer in cust %}
+            <p>
+                <a class="btn btn-primary" href="{% url 'showSingleCustomer' cust_id=customer.id %}">Edit</a>
+                <a class="btn btn-primary" href="{% url 'addCustomerDestination' cust_id=customer.id %}">Add Destination</a>
+                {{ customer.last_name }}, {{ customer.first_name }}
+                <a class="btn btn-primary" href="{% url 'deleteCustomer' cust_id=customer.id %}">Delete</a>
+            </p>
+            {% endfor %}
+        </div>
     </div>
-    <br><br><br>
-<header>
 {% endblock %}

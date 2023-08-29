@@ -14,6 +14,7 @@ class Destination(models.Model):
     days = models.IntegerField(default=0)
     cost = models.DecimalField(max_digits=8, decimal_places=2)
     main_photo = models.ImageField(upload_to='photos')
+    secondary_photo = models.ImageField(upload_to='photos', null=True)
     is_active = models.BooleanField(default=True)
     leave_date = models.DateField(default=datetime.today, blank=True)
 

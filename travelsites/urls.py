@@ -6,6 +6,7 @@ from .views import showAustraliaPageView
 from .views import showEuropePageView
 from .views import showNorthAmericaPageView
 from .views import showSouthAmericaPageView
+from .views import showMiddleEastPageView
 
 urlpatterns = [
      path("", showtripsPageView, name="showtrips"),
@@ -15,4 +16,5 @@ urlpatterns = [
      path("europe/", showEuropePageView, name="europe"),
      path("northamerica/", showNorthAmericaPageView, name="northamerica"),
      path("southamerica/", showSouthAmericaPageView, name="southamerica"),
+     path("middleeast/", showMiddleEastPageView, name="middleeast"),
 ]

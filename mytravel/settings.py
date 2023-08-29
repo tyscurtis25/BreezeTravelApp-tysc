@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'travel',
         'USER' : 'postgres',
-        'PASSWORD' : 'Kp Rg O@dm1Nn OS',
+        'PASSWORD' : 'Wgr8pwr-cgR*',
         'HOST' : 'localhost'
     }
 }

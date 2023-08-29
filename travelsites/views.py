@@ -12,7 +12,9 @@ def showAfricaPageView(request) :
     data = Destination.objects.get(trip_category_id = id)
     context = {
         "area" : id.description,
-        "image" : data.main_photo
+        "title" : data.title,
+        "image1" : data.main_photo,
+        "image2" : data.secondary_photo
     }
     return render(request, 'travelsites/displaytrips.html', context)
 
@@ -21,7 +23,9 @@ def showAsiaPageView(request) :
     data = Destination.objects.get(trip_category_id = id)
     context = {
         "area" : id.description,
-        "image" : data.main_photo
+        "title" : data.title,
+        "image1" : data.main_photo,
+        "image2" : data.secondary_photo
     }
     return render(request, 'travelsites/displaytrips.html', context)
 
@@ -30,7 +34,9 @@ def showAustraliaPageView(request) :
     data = Destination.objects.get(trip_category_id = id)
     context = {
         "area" : id.description,
-        "image" : data.main_photo
+        "title" : data.title,
+        "image1" : data.main_photo,
+        "image2" : data.secondary_photo
     }
     return render(request, 'travelsites/displaytrips.html', context)
 
@@ -39,7 +45,9 @@ def showEuropePageView(request) :
     data = Destination.objects.get(trip_category_id = id)
     context = {
         "area" : id.description,
-        "image" : data.main_photo
+        "title" : data.title,
+        "image1" : data.main_photo,
+        "image2" : data.secondary_photo
     }
     return render(request, 'travelsites/displaytrips.html', context)
 
@@ -48,7 +56,9 @@ def showNorthAmericaPageView(request) :
     data = Destination.objects.get(trip_category_id = id)
     context = {
         "area" : id.description,
-        "image" : data.main_photo
+        "title" : data.title,
+        "image1" : data.main_photo,
+        "image2" : data.secondary_photo
     }
     return render(request, 'travelsites/displaytrips.html', context)
 
@@ -57,7 +67,20 @@ def showSouthAmericaPageView(request) :
     data = Destination.objects.get(trip_category_id = id)
     context = {
         "area" : id.description,
-        "image" : data.main_photo
+        "title" : data.title,
+        "image1" : data.main_photo,
+        "image2" : data.secondary_photo
+    }
+    return render(request, 'travelsites/displaytrips.html', context)
+
+def showMiddleEastPageView(request) :
+    id = TripCategory.objects.get(description = "Middle East")
+    data = Destination.objects.get(trip_category_id = id)
+    context = {
+        "area" : id.description,
+        "title" : data.title,
+        "image1" : data.main_photo,
+        "image2" : data.secondary_photo
     }
     return render(request, 'travelsites/displaytrips.html', context)
 

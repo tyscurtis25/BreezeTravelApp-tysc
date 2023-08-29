@@ -2,130 +2,86 @@
 
 :root {
   --one: #04ADBF;
+  /* rgba(4,173,191,1) */
   --two: #04BFBF;
+  /* rgba(4,191,191,1) */
   --three: #025959;
+  /* rgba(2,89,89,1) */
   --four: #A0A603;
   --five: #F2E0C9;
   --white: #ffffff;
   --text: #333333;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
 
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  
-  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-  }
-
-  body {
-    font-family: var(--font-family-sans-serif);
-    background-color: var(--five);
-    margin: 0;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--text);
-    text-align: left;
-    height:100%;
-  }
-
-  .navbar a {
-    color: var(--white);
-  }
-
-  .navbar a:hover {
-    color: var(--five);
-  }
-
-  .navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 50px;
-    width: 100%;
-    background-color: var(--one);
-    box-shadow: 0px .5px 2px rgb(54,69,79,0.3);
-    z-index:2;
-    }
-
-  a {
-    color: var(--white);
-    text-decoration: none;
-    background-color: transparent;
-  }
-  a:hover {
-    color: var(--five);
-    text-decoration: underline;
-  }
-
-  h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
 }
 
-header.masthead {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
-    text-align: center;
-    color: #fff;
-    background-image: url("../img/pexels-errin-casano-2356045.jpg");
-    background-repeat: no-repeat;
-    height:100%;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-  }
-  header.masthead .masthead-subheading {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin-bottom: 25px;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-  header.masthead .masthead-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-    margin-bottom: 2rem;
-    background-color:var(--one);
-    opacity: .65;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-  
-  @media (min-width: 768px) {
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #04ADBF;
+}
 
-    header.masthead .masthead-subheading {
-      font-size: 2.25rem;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-    header.masthead .masthead-heading {
-      font-size: 3rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
+h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: #333333;
+}
+
+.breeze-color {
+  color: #FFFFFF;
+}
+
+body {
+  background-image: url(../../../media/photos/great-pyramids-egypt.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #333333;
+}
+
+.navbar a {
+  color: var(--white);
+  transition: color 0.7s ease;
+}
+
+.navbar a:hover {
+  color: #04BFBF;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(4,173,191,0.1);
+  z-index:2;
   }
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  background-color: transparent;
+  transition: color 0.7s ease;
+}
+
+  a:hover {
+    color: #04BFBF;
+  }
+
+.trips-bg {
+  background-color: rgba(4,191,191,0.7);
+}
 
 footer {
     position: fixed;
@@ -134,7 +90,7 @@ footer {
     width: 100%;
     background-color: var(--six);
     color: var(--white);
-    background-color: var(--one);
+    background-color: rgba(4,173,191,0.2);
     text-align: center;
     height: 45px;
 }
@@ -146,6 +102,7 @@ footer a {
 
 .btn-primary {
     background-color: var(--two);
+    transition: background-color 0.7s ease;
     border: none;
 }
 
