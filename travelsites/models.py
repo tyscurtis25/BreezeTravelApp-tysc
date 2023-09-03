@@ -3,18 +3,20 @@ from datetime import datetime, timedelta
 
 # Create your models here.
 class TripCategory(models.Model):
-    description = models.CharField(max_length=20)
+    description = models.CharField(max_length=50)
 
     def __str__(self):
         return (self.description)
 
 class Destination(models.Model):
     trip_category = models.OneToOneField(TripCategory, on_delete=models.CASCADE)
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=75)
+    description = models.CharField(max_length=5000, null=True)
     days = models.IntegerField(default=0)
     cost = models.DecimalField(max_digits=8, decimal_places=2)
     main_photo = models.ImageField(upload_to='photos')
-    secondary_photo = models.ImageField(upload_to='photos', null=True)
+    second_photo = models.ImageField(upload_to='photos', null=True)
+    third_photo = models.ImageField(upload_to='photos', null=True)
     is_active = models.BooleanField(default=True)
     leave_date = models.DateField(default=datetime.today, blank=True)
 

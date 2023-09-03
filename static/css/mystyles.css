@@ -2,12 +2,19 @@
 
 :root {
   --one: #04ADBF;
+  /* rgba(4,173,191,1) */
   --two: #04BFBF;
+  /* rgba(4,191,191,1) */
   --three: #025959;
+  /* rgba(2,89,89,1) */
   --four: #A0A603;
+  /* rgba(160,166,3,1) */
   --five: #F2E0C9;
+  /* rgba(242,224,201,1) */
   --white: #ffffff;
+  /* rgba(255,255,255,1) */
   --text: #333333;
+  /* rgba(51,51,51,1) */
 }
 
 /* 
@@ -17,32 +24,368 @@ font-family: 'Nunito', sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
 }
 
-h1 {
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); */
+}
+
+h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+}
+
+.breeze-color {
+  color: #04ADBF;
+}
+
+.main-title {
   color: #04ADBF;
 }
 
 body {
-  background-image: url(../../../media/photos/great-pyramids-egypt.jpg);
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+}
+
+.home-bg {
+  background-image: url(../../../media/photos/southamerica3-machu-piccu-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.africa1-bg {
+  background-image: url(../../../media/photos/africa1-great-pyramids-egypt-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.africa1-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.africa2-bg {
+  background-image: url(../../../media/photos/africa2-kilimanjaro-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.africa2-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.asia1-bg {
+  background-image: url(../../../media/photos/asia-china-great-wall-2-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.asia1-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.asia2-bg {
+  background-image: url(../../../media/photos/asia3-bali-temple-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.asia2-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.asia3-bg {
+  background-image: url(../../../media/photos/asia2-japan-arashiyama-bamboo-grove-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.asia3-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.australia-bg {
+  background-image: url(../../../media/photos/australia-heart-reef-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.australia-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.centralamerica-bg {
+  background-image: url(../../../media/photos/centralamerica-mexico-chichen-itza-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.centralamerica-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.europe1-bg {
+  background-image: url(../../../media/photos/europe1-paris-france-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.europe1-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.europe2-bg {
+  background-image: url(../../../media/photos/europe2-italy-venice-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.europe2-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.middleeast-bg {
+  background-image: url(../../../media/photos/middleeast-abu-dhabi-sheikh-zayed-grand-mosque-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.middleeast-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.northamerica1-bg {
+  background-image: url(../../../media/photos/northamerica-grand-canyon-2-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.northamerica1-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.northamerica2-bg {
+  background-image: url(../../../media/photos/northamerica-hawaii-1-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.northamerica2-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.southamerica1-bg {
+  background-image: url(../../../media/photos/southamerica1-iguazu-falls3-gr.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
-  font-family: 'Nunito', sans-serif;
-  color: #333333;
 }
+
+.southamerica1-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.southamerica2-bg {
+  background-image: url(../../../media/photos/southamerica2-amazon-rainforest-bridge-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.southamerica2-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.southamerica3-bg {
+  background-image: url(../../../media/photos/southamerica3-machu-piccu-gr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.southamerica3-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2,89,89,0.3) ; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+/* .img-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+} */
 
 .navbar a {
   color: var(--white);
+  transition: color 0.7s ease;
 }
 
 .navbar a:hover {
-  color: var(--five);
+  color: #025959;
 }
 
 .navbar {
@@ -51,18 +394,79 @@ body {
   top: 0;
   height: 50px;
   width: 100%;
-  background-color: rgba(4,173,191,0.2);
   z-index:2;
-  }
+}
+
+.home-nav {
+  background: linear-gradient(to bottom, rgba(2,89,89,0.3), transparent);
+}
 
 a {
   color: var(--white);
   text-decoration: none;
   background-color: transparent;
+  transition: color 0.7s ease;
 }
-a:hover {
-  color: var(--five);
-  text-decoration: underline;
+
+  a:hover {
+    color: #04BFBF;
+  }
+
+.trip-description p {
+  text-align: left;
+  line-height: 1.25;
+}
+
+.destination-bg {
+  background-color: rgba(2,89,89,0.8);
+  border-radius: 9px;
+}
+
+.destination-bg img {
+  border-radius: 9px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4,173,191,0.7); /* Background color for the overlay */
+    color: #fff; /* Text color for the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth fade-in transition */
+    border-radius: 9px;
+    padding:5px;
+    line-height: 1.25;
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.img-thumbnail {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    border-radius: 9px;
+    padding: 0;
 }
 
 footer {
@@ -70,11 +474,13 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--six);
     color: var(--white);
-    background-color: rgba(4,173,191,0.2);
     text-align: center;
     height: 45px;
+}
+
+.home-footer {
+  background: linear-gradient(to top, rgba(2,89,89,0.2) 40%, transparent 100%);
 }
 
 footer a {
@@ -83,11 +489,16 @@ footer a {
 }
 
 .btn-primary {
-    background-color: var(--two);
+    background-color: var(--one);
+    transition: background-color 0.7s ease;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: var(--three);
+    background-color: var(--two);
     border: none;
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
